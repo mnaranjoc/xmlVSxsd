@@ -15,7 +15,7 @@ namespace xmlVSxsd
             try
             {
                 /* Lectura de cfdi */
-                string sPathXML = @"C:\Users\manuel.naranjo\Desktop\Nueva carpeta\ejemplo detecno.xml";
+                string sPathXML = @"C:\Users\manuel.naranjo\Desktop\Nueva carpeta\f24.xml";
                 byte[] yXml = File.ReadAllBytes(sPathXML);
 
                 /* Llamado al método y verificación de resultado */
@@ -58,6 +58,13 @@ namespace xmlVSxsd
                 oSchemaSet.Add(null, @".\xsd\catCFDI.xsd");
                 oSchemaSet.Add(null, @".\xsd\tdCFDI.xsd");*/
                 oSchemaSet.Add(null, @"C:\Users\manuel.naranjo\Desktop\Nueva carpeta\XML_V7.0.xsd");
+                oSchemaSet.Add(null, @"C:\Users\manuel.naranjo\Desktop\Nueva carpeta\Catalogos\catCFDI.xsd");
+                oSchemaSet.Add(null, @"C:\Users\manuel.naranjo\Desktop\Nueva carpeta\Catalogos\catCOAPA.xsd");
+                oSchemaSet.Add(null, @"C:\Users\manuel.naranjo\Desktop\Nueva carpeta\Catalogos\catCombustible.xsd");
+                oSchemaSet.Add(null, @"C:\Users\manuel.naranjo\Desktop\Nueva carpeta\Catalogos\catComExt.xsd");
+                oSchemaSet.Add(null, @"C:\Users\manuel.naranjo\Desktop\Nueva carpeta\Catalogos\catNomina.xsd");
+                oSchemaSet.Add(null, @"C:\Users\manuel.naranjo\Desktop\Nueva carpeta\Catalogos\catPagos.xsd");
+                oSchemaSet.Add(null, @"C:\Users\manuel.naranjo\Desktop\Nueva carpeta\Catalogos\tdCFDI.xsd");
                 oSchemaSet.Compile();
 
                 /* Asignación de shcemas */
